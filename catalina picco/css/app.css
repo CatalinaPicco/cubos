@@ -1,0 +1,111 @@
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+
+:root {
+  --violet: #A64AC9;
+  --yellow: #FCCD04;
+  --rose: #FFB48F;
+  --bone: #F5E6CC;
+  --sky: #17E9E0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+header {
+  height: 70px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+}
+.more {
+  position: absolute;
+  top:10px;
+  right:10px;
+  color: #666;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #EEEEEE;
+}
+
+.one div, .two div {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border: 4px solid #EEEEEE;
+  color: #333;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.one {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 25vw;
+}
+
+.two {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  width: 25vw;
+}
+
+.n1 {
+  width: 25vw;
+  height: 25vw;
+}
+
+.n1:nth-child(even):hover{
+  background: var(--rose);
+  color: black;
+}
+
+.n1:nth-child(odd):hover{
+  background: var(--bone);
+  color: black;
+}
+
+.n2:nth-child(odd):hover{
+  background: var(--sky);
+  color: white;
+}
+
+.n2:nth-child(even):hover{
+  background: var(--violet);
+  color: white;
+}
+
+.n3:hover {
+  background: var(--yellow);
+  color: white;
+}
+
+.n2 {
+  width: 12.5vw;
+  height: 12.5vw;
+}
+
+.n3 {
+  width: 25vw;
+  height:12.5vw;
+}
